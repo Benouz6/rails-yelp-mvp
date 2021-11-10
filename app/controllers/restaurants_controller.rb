@@ -27,7 +27,7 @@ class RestaurantsController < ApplicationController
   def update
     @restaurant = Restaurant.find(params[:id])
     @restaurant.update(restaurant_params)
-    redirect_to restaurants_params_path(params[:id])
+    redirect_to restaurants_path(params[:id])
   end
 
   def destroy
@@ -39,6 +39,6 @@ class RestaurantsController < ApplicationController
   private
 
   def restaurant_params
-    params.require(:restaurant).permit(:name, :adress, :category)
+    params.require(:restaurant).permit(:name, :address, :category)
   end
 end
