@@ -1,6 +1,7 @@
 <h1><%= @restaurant.name %></h1>
 <p><%= @restaurant.address %></p>
 
+<p><%= link_to "Review restaurant", new_restaurant_review_path(@restaurant) %></p>
 <p><%= link_to "Edit a restaurant", edit_restaurant_path %></p>
 <p><%= link_to "Back to list", restaurants_path %></p>
 <p><%= link_to "Delete", restaurant_path(@restaurant), method: :delete, data: {confirm:"Are you sure?"} %></p>
