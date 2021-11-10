@@ -11,3 +11,30 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body {
+background-color: white;
+}
+
+.content {
+  border-radius: 5px;
+  margin: 100px 400px;
+  background-color: #B91646;
+  text-align: center;
+}
+
+ .main h1{
+   text-align: center;
+   margin: 6px;
+   color: #DFD8CA;
+ }
+
+ul{
+  list-style-type: none;
+}
+
+ ul a{
+  font-size: 24px;
+  color: #DFD8CA;
+ }
